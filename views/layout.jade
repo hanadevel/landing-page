@@ -1,7 +1,66 @@
 doctype html
 html
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title HANADEVelopers
+    meta(http-equiv='content-type', content='text/html; charset=utf-8')
+    meta(name='description', content='')
+    meta(name='keywords', content='')
+    //if lte IE 8
+      script(src='css/ie/html5shiv.js')
+    script(src='js/jquery.min.js')
+    script(src='js/jquery.poptrox.min.js')
+    script(src='js/skel.min.js')
+    script(src='js/init.js')
+    noscript
+      link(rel='stylesheet', href='css/skel-noscript.css')
+      link(rel='stylesheet', href='css/style.css')
+    //if lte IE 8
+      link(rel='stylesheet', href='css/ie/v8.css')
   body
+    // Header
+    header#header
+      // Logo
+      h1#logo
+        a(href='#') HANADEVelopers
+      // Nav
+      nav#nav
+        ul
+          li
+            a(href='#intro') Inicio
+          li
+            a(href='#one') Quienes Somos
+          // <li><a href="#two">Who I Am</a></li>
+          li
+            a(href='#work') My Work
+          li
+            a(href='#contact') Contacto
     block content
+    // Footer
+    footer#footer
+      //
+        Social Icons
+
+        Use anything from here: http://fortawesome.github.io/Font-Awesome/cheatsheet/)
+
+      ul.actions
+        li
+          a.fa.solo.fa-twitter(href='#')
+            span Twitter
+        li
+          a.fa.solo.fa-facebook(href='#')
+            span Facebook
+        li
+          a.fa.solo.fa-google-plus(href='#')
+            span Google&plus;
+        li
+          a.fa.solo.fa-dribbble(href='#')
+            span Dribbble
+        li
+          a.fa.solo.fa-pinterest(href='#')
+            span Pinterest
+        li
+          a.fa.solo.fa-instagram(href='#')
+            span Instagram
+      // Menu
+      ul.menu
+        li &copy; Hanavelopers

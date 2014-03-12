@@ -1,5 +1,98 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  // Intro
+  section#intro.main.style1.dark.fullscreen
+    .content.container.small
+      header
+        h2 Hana Developers
+      p
+        img(src='images/logo.png', title='Node Js', alt='', width='200')
+        br
+        i &OpenCurlyDoubleQuote;La oportunidad de nuestro futuro&comma; la vemos en el &eacute;xito de nuestros clientes&rdquor;
+        //
+          Welcome to <strong>Big Picture</strong> a responsive site template designed
+          by <a href="http://html5up.net">HTML5 UP</a>, built on <a href="http://skeljs.org">skelJS</a>,
+          and released for free under the <a href="http://html5up.net/license/">Creative Commons Attribution 3.0 license</a>.
+      footer
+        a.button.style2.down(href='#one') More
+  // One
+  section#one.main.style2.right.dark.fullscreen
+    .content.box.style2
+      header
+        h2 Quienes Somos
+      p
+        | Somos una empresa consultora en tecnolog&iacute;as de informaci&oacute;n&comma; especializada en el desarrollo de aplicaciones y soluciones de negocio para peque&ntilde;as&comma; medianas y grandes empresas en los sectores educativo&comma; medico&comma; industrias diversas&comma; empresas de servicio y gobierno&period;
+      p
+        | Contamos con amplia experiencia en el desarrollo e implementaci&oacute;n de aplicaciones y soluciones tecnol&oacute;gicas aplicando las mejores pr&aacute;cticas para hacer su negocio m&aacute;s competitivo&comma; rentable&comma; reduciendo costos y optimizando recursos&period;
+      p
+        | Nos especializamos en el desarrollo de aplicaciones Web y aplicaciones moviles&period;
+    a.button.style2.down.anchored(href='#work') Next
+  //
+    Two
+    <section id="two" class="main style2 left dark fullscreen">
+    <div class="content box style2">
+    <header>
+    <h2>Who I Am</h2>
+    </header>
+    <p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+    Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
+    id varius justo euismod in. Curabitur egestas consectetur magna urna.</p>
+    </div>
+    <a href="#work" class="button style2 down anchored">Next</a>
+    </section>
+
+  // Work
+  section#work.main.style3.primary
+    .content.container
+      header
+        h2 Tecnologia
+        p
+          | Contamos con  personal especializado en desarrollo profesional utilizando todas las herramientas tecnologicas disponibles&period;
+      //
+        Lightbox Gallery
+        Powered by poptrox. Full docs here: https://github.com/n33/jquery.poptrox
+
+      .container.small.gallery
+        .row.flush.images
+          .4u
+            a.image.full.l(href='images/fulls/webbig.png')
+              img(src='images/thumbs/web.png', title='Html5 Css3', alt='')
+          .4u
+            a.image.full.r(href='images/fulls/nodebig.png')
+              img(src='images/thumbs/node.png', title='Node Js', alt='')
+          .4u
+            a.image.full.r(href='images/fulls/androidbig.png')
+              img(src='images/thumbs/android.png', title='Android', alt='')
+        .row.flush.images
+          .4u
+            a.image.full.l(href='images/fulls/phpbig.png')
+              img(src='images/thumbs/php.png', title='PHP', alt='')
+          .4u
+            a.image.full.r(href='images/fulls/djangobig.png')
+              img(src='images/thumbs/django.png', title='Python + Django', alt='')
+          .4u
+            a.image.full.l(href='images/fulls/railsbig.png')
+              img(src='images/thumbs/rails.png', title='Ruby on Rails', alt='')
+    a.button.style2.down.anchored(href='#contact') Next
+  // Contact
+  section#contact.main.style3
+    .content.container
+      header
+        h2.white Escribenos
+        // <p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.</p>
+      .box.container.small
+        form(method='post', action='#')
+          .row.half
+            .6u
+              input(type='text', name='name', placeholder='Nombre')
+            .6u
+              input(type='text', name='email', placeholder='Email')
+          .row.half
+            .12u
+              textarea(name='message', placeholder='Mensaje', rows='2')
+          .row
+            .12u
+              ul.actions
+                li
+                  input.button(type='submit', value='Enviar Mensaje')
